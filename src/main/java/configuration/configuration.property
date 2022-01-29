@@ -1,0 +1,8 @@
+url = https://test.skytap.com
+
+userName = Shivadmin
+password = Qait@2021
+
+browser = chrome
+Page_Load_Time = 20
+Implicity_Wait = 10
