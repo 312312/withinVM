@@ -14,6 +14,7 @@ public class LoginPage {
 		WebDriver driver= new ChromeDriver();
 		
 		driver.get("https://test.skytap.com");
+		driver.manage().window().maximize();
 		
 		
 	}
