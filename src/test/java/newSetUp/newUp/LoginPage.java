@@ -15,7 +15,7 @@ public class LoginPage {
 		
 		driver.get("https://test.skytap.com");
 		driver.manage().window().maximize();
-		
+		driver.get("https://aol.com");
 		
 	}
 	
