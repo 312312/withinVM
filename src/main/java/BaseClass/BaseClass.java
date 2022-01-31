@@ -8,6 +8,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -69,6 +70,8 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(prop.getProperty("url"));
+		
+		driver.findElement(By.cssSelector("button.cookie-banner__accept-button")).click();
 		
 		
 
