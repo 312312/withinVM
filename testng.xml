@@ -5,6 +5,7 @@
     <classes>
       <class name="newSetUp.newUp.AppTest"/>
       <class name="newSetUp.newUp.LoginPageTest"/>
+<class name="newSetUp.newUp.ProjectPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
