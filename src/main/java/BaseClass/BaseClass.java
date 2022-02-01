@@ -51,8 +51,11 @@ public class BaseClass {
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\autoadmin\\Desktop\\chromedriver.exe");
+			
+			String driverlocation=System.getProperty("user.dir")+"/src/main/java/resources/chromedriver.exe";
+			
+			
+			System.setProperty("webdriver.chrome.driver",driverlocation);
 	
 			
 			ChromeOptions options = new ChromeOptions();
