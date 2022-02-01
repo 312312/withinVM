@@ -30,8 +30,9 @@ public class BaseClass {
 	public BaseClass() {
 		try {
 			prop = new Properties();
-			FileInputStream fis = new FileInputStream(
-					"C:\\Users\\autoadmin\\Desktop\\configuration.property");
+			
+			String filelocation=System.getProperty("user.dir")+"/src/main/java/configuration/configuration.property";
+			FileInputStream fis = new FileInputStream(filelocation);
 			prop.load(fis);
 
 		} catch (FileNotFoundException e) {
