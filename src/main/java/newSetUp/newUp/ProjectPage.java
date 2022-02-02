@@ -147,11 +147,12 @@ public class ProjectPage extends BaseClass {
 	}
 
 	public void addEnvironmentToProject() {
+		
 		addEnvironemntToProject.click();
 		wait.until(ExpectedConditions.visibilityOf(listOfEnvironmentInProject));
-
 		addButton.click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(addedText));
+		System.out.println(driver.getCurrentUrl());
 
 	}
 

@@ -81,13 +81,13 @@ public class BaseClass {
 
 	}
 	
-	public static void getScreenshot(String methodName, WebDriver driver) throws IOException
-	{
+//	public static void getScreenshot(String methodName, WebDriver driver) throws IOException
+//	{
 		
-		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String destination= System.getProperty("user.dir")+"\\reports\\"+ methodName +".png";		
-		FileUtils.copyFile(src, new File(destination));	
+//		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//		String destination= System.getProperty("user.dir")+"\\reports\\"+ methodName +".png";		
+//		FileUtils.copyFile(src, new File(destination));	
 		
-	}
+//	}
 
 }
