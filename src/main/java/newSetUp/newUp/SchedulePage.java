@@ -37,7 +37,7 @@ public class SchedulePage extends BaseClass {
 	@FindBy(xpath = "//a[contains(text(),'Schedule')]")
 	static WebElement schedules;
 
-	@FindBy(xpath = "(//a[@title=''])[1]")
+	@FindBy(xpath = "(//a[@title='Create a new schedule'])[1]")
 	static WebElement newScheduleButton;
 
 	@FindBy(xpath="(//tbody/tr[@class='resource']/td[1])[1]")
