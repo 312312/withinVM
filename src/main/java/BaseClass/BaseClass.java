@@ -21,7 +21,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BaseClass {
 
-//	public static WebDriver driver;
 	public static ChromeDriver driver;
 	public static Properties prop;
 	public static WebDriverWait wait;
@@ -53,16 +52,12 @@ public class BaseClass {
 		if (browserName.equals("chrome")) {
 			
 			String driverlocation=System.getProperty("user.dir")+"/src/main/java/resources/chromedriver.exe";
-			
-			
 			System.setProperty("webdriver.chrome.driver",driverlocation);
 	
 			
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--headless");
-			
-			
-			
+						
 //			DesiredCapabilities capabilities = new DesiredCapabilities();
 //			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 //			options.merge(capabilities);
@@ -73,12 +68,9 @@ public class BaseClass {
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.get(prop.getProperty("url"));
-		
+		driver.get(prop.getProperty("url"));	
 		driver.findElement(By.cssSelector("button.cookie-banner__accept-button")).click();
-		
-		
-
+	
 	}
 	
 	public static void getScreenshot(String methodName, WebDriver driver) throws IOException
