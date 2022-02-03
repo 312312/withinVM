@@ -2,26 +2,26 @@
 <testng-results retried="2" ignored="0" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-02T18:59:13 IST" name="Suite" finished-at="2022-02-02T18:59:50 IST" duration-ms="37116">
+  <suite started-at="2022-02-03T11:39:32 IST" name="Suite" finished-at="2022-02-03T11:40:03 IST" duration-ms="31514">
     <groups>
     </groups>
-    <test started-at="2022-02-02T18:59:13 IST" name="Test" finished-at="2022-02-02T18:59:50 IST" duration-ms="37116">
+    <test started-at="2022-02-03T11:39:32 IST" name="Test" finished-at="2022-02-03T11:40:03 IST" duration-ms="31514">
       <class name="newSetUp.newUp.SchedulePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-02T18:59:13 IST" name="setUp" finished-at="2022-02-02T18:59:43 IST" duration-ms="29978" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-03T11:39:32 IST" name="setUp" finished-at="2022-02-03T11:39:58 IST" duration-ms="25998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="createSchedule()[pri:1, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-02T18:59:43 IST" name="createSchedule" finished-at="2022-02-02T18:59:47 IST" duration-ms="3240" status="SKIP">
+        <test-method retried="true" signature="createSchedule()[pri:1, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-03T11:39:58 IST" name="createSchedule" finished-at="2022-02-03T11:40:00 IST" duration-ms="1683" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@title=''])[1]"}
   (Session info: chrome=97.0.4692.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QT-INNO-LT1420', ip: '192.168.1.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: host: 'QT-INNO-LT1420', ip: '192.168.248.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ed98071815ea9e9989273ba86276034c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b136bcd9f0dcee8ecc766fe8f69917fe
 *** Element info: {Using=xpath, value=(//a[@title=''])[1]}]]>
             </message>
             <full-stacktrace>
@@ -29,10 +29,10 @@ Session ID: ed98071815ea9e9989273ba86276034c
   (Session info: chrome=97.0.4692.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QT-INNO-LT1420', ip: '192.168.1.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: host: 'QT-INNO-LT1420', ip: '192.168.248.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ed98071815ea9e9989273ba86276034c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b136bcd9f0dcee8ecc766fe8f69917fe
 *** Element info: {Using=xpath, value=(//a[@title=''])[1]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -52,7 +52,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at newSetUp.newUp.SchedulePage.scheduleClick(SchedulePage.java:67)
+at newSetUp.newUp.SchedulePage.scheduleClick(SchedulePage.java:64)
 at newSetUp.newUp.SchedulePageTest.createSchedule(SchedulePageTest.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -88,17 +88,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createSchedule -->
-        <test-method retried="true" signature="createSchedule()[pri:1, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-02T18:59:47 IST" name="createSchedule" finished-at="2022-02-02T18:59:49 IST" duration-ms="2369" status="SKIP">
+        <test-method retried="true" signature="createSchedule()[pri:1, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-03T11:40:00 IST" name="createSchedule" finished-at="2022-02-03T11:40:01 IST" duration-ms="1677" status="SKIP">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@title=''])[1]"}
   (Session info: chrome=97.0.4692.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QT-INNO-LT1420', ip: '192.168.1.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: host: 'QT-INNO-LT1420', ip: '192.168.248.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ed98071815ea9e9989273ba86276034c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b136bcd9f0dcee8ecc766fe8f69917fe
 *** Element info: {Using=xpath, value=(//a[@title=''])[1]}]]>
             </message>
             <full-stacktrace>
@@ -106,10 +106,10 @@ Session ID: ed98071815ea9e9989273ba86276034c
   (Session info: chrome=97.0.4692.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QT-INNO-LT1420', ip: '192.168.1.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: host: 'QT-INNO-LT1420', ip: '192.168.248.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ed98071815ea9e9989273ba86276034c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b136bcd9f0dcee8ecc766fe8f69917fe
 *** Element info: {Using=xpath, value=(//a[@title=''])[1]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -129,7 +129,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at newSetUp.newUp.SchedulePage.scheduleClick(SchedulePage.java:67)
+at newSetUp.newUp.SchedulePage.scheduleClick(SchedulePage.java:64)
 at newSetUp.newUp.SchedulePageTest.createSchedule(SchedulePageTest.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -165,17 +165,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createSchedule -->
-        <test-method signature="createSchedule()[pri:1, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-02T18:59:49 IST" name="createSchedule" finished-at="2022-02-02T18:59:50 IST" duration-ms="1245" status="FAIL">
+        <test-method signature="createSchedule()[pri:1, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-03T11:40:01 IST" name="createSchedule" finished-at="2022-02-03T11:40:03 IST" duration-ms="1864" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//a[@title=''])[1]"}
   (Session info: chrome=97.0.4692.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QT-INNO-LT1420', ip: '192.168.1.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: host: 'QT-INNO-LT1420', ip: '192.168.248.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ed98071815ea9e9989273ba86276034c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b136bcd9f0dcee8ecc766fe8f69917fe
 *** Element info: {Using=xpath, value=(//a[@title=''])[1]}]]>
             </message>
             <full-stacktrace>
@@ -183,10 +183,10 @@ Session ID: ed98071815ea9e9989273ba86276034c
   (Session info: chrome=97.0.4692.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QT-INNO-LT1420', ip: '192.168.1.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+System info: host: 'QT-INNO-LT1420', ip: '192.168.248.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58763}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ed98071815ea9e9989273ba86276034c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\ROHIT~1.SAI\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:53015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b136bcd9f0dcee8ecc766fe8f69917fe
 *** Element info: {Using=xpath, value=(//a[@title=''])[1]}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -206,7 +206,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at newSetUp.newUp.SchedulePage.scheduleClick(SchedulePage.java:67)
+at newSetUp.newUp.SchedulePage.scheduleClick(SchedulePage.java:64)
 at newSetUp.newUp.SchedulePageTest.createSchedule(SchedulePageTest.java:49)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -242,7 +242,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createSchedule -->
-        <test-method is-config="true" signature="lastTest()[pri:0, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-02T18:59:50 IST" name="lastTest" finished-at="2022-02-02T18:59:50 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="lastTest()[pri:0, instance:newSetUp.newUp.SchedulePageTest@483f6d77]" started-at="2022-02-03T11:40:03 IST" name="lastTest" finished-at="2022-02-03T11:40:03 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lastTest -->

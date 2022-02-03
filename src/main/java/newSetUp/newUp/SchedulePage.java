@@ -57,9 +57,6 @@ public class SchedulePage extends BaseClass {
 	static Actions actions = new Actions(driver);
 
 	static WebDriverWait wait = new WebDriverWait(driver, 130);
-
-	
-
 	
 	public static void scheduleClick() throws InterruptedException {
 
