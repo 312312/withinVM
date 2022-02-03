@@ -6,7 +6,7 @@
 <listener class-name="utilities.RetryListener" /> 
 </listeners>
 
-	<test thread-count="2" name="Test">
+	<test thread-count="1" name="Test">
 		<classes>
 			<class name="newSetUp.newUp.AppTest" />
 			<class name="newSetUp.newUp.LoginPageTest" />

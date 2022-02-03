@@ -59,7 +59,7 @@ public class SchedulePage extends BaseClass {
 	static WebDriverWait wait = new WebDriverWait(driver, 130);
 	
 	public static void scheduleClick() throws InterruptedException {
-
+		Thread.sleep(3000);
 		schedules.click();
 		newScheduleButton.click();
 		Thread.sleep(7000);
