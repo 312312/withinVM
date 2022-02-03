@@ -7,6 +7,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="newSetUp.newUp.ProjectPageTest">
+        <methods>
+          <include name="addGroupToProject"/>
+          <include name="removeFromProject"/>
+          <include name="setUp"/>
+          <include name="lastTest"/>
+        </methods>
+      </class> <!-- newSetUp.newUp.ProjectPageTest -->
       <class name="newSetUp.newUp.SchedulePageTest">
         <methods>
           <include name="setUp"/>
