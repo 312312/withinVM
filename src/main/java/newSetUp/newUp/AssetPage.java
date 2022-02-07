@@ -104,7 +104,7 @@ public class AssetPage extends BaseClass {
 		browse.click();
 		System.out.print("click on browse");
 
-		String assetLocation=System.getProperty("user.dir")+"/src/main/java/resources/VMware-Tools-Linux-10.3.1-9925305 (1) (2) (1) (1).iso";
+		String assetLocation=System.getProperty("user.dir")+"\src\main\java\resources\VMware-Tools-Linux-10.3.1-9925305 (1) (2) (1) (1).iso";
 		StringSelection sec = new StringSelection(assetLocation);
 		
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sec, null);

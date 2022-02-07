@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="newSetUp.newUp.EnvironmentPageTest">
+      <class name="newSetUp.newUp.AssetPageTest">
         <methods>
-          <include name="afterMethod"/>
-          <include name="runEnvironment"/>
-          <include name="reportSetUp"/>
+          <include name="navigateToUploadassetPage"/>
+          <include name="setUp"/>
+          <include name="moreOptionDropDown"/>
+          <include name="knowBefore"/>
+          <include name="lastTest"/>
         </methods>
-      </class> <!-- newSetUp.newUp.EnvironmentPageTest -->
+      </class> <!-- newSetUp.newUp.AssetPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
