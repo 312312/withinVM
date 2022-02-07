@@ -80,7 +80,8 @@ public class EnvironmentPageTest extends BaseClass {
 	{	
 		extent.createTest("Create Environemnt").assignCategory("Regression").assignAuthor("Rohit");
 		environmentPage.createNewEnvironment();
-		
+		System.out.println(driver.getCurrentUrl());
+	
 	}
   	
 	@Test(priority=5)
@@ -92,9 +93,10 @@ public class EnvironmentPageTest extends BaseClass {
 	}
   	
 	@Test(priority=6)
-	public void suspendEnvironment()
+	public void suspendEnvironment() throws InterruptedException
 	{	
 		extent.createTest("Suspend Environemnt").assignCategory("Regression").assignAuthor("Rohit");
+		Thread.sleep(1000);
 		try {
 			environmentPage.suspendEnvironemnt();
 		} catch (InterruptedException e) {
