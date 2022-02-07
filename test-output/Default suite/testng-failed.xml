@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="newSetUp.newUp.SchedulePageTest">
+      <class name="newSetUp.newUp.EnvironmentPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="lastTest"/>
-          <include name="createSchedule"/>
+          <include name="afterMethod"/>
+          <include name="runEnvironment"/>
+          <include name="reportSetUp"/>
         </methods>
-      </class> <!-- newSetUp.newUp.SchedulePageTest -->
+      </class> <!-- newSetUp.newUp.EnvironmentPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

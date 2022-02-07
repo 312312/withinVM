@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="utilities.Listeners"/>
-    <listener class-name="utilities.RetryListener"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="newSetUp.newUp.ProjectPageTest">
+      <class name="newSetUp.newUp.EnvironmentPageTest">
         <methods>
-          <include name="addGroupToProject"/>
-          <include name="removeFromProject"/>
-          <include name="setUp"/>
-          <include name="lastTest"/>
+          <include name="afterMethod"/>
+          <include name="runEnvironment"/>
+          <include name="reportSetUp"/>
         </methods>
-      </class> <!-- newSetUp.newUp.ProjectPageTest -->
-      <class name="newSetUp.newUp.SchedulePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="lastTest"/>
-          <include name="createSchedule"/>
-        </methods>
-      </class> <!-- newSetUp.newUp.SchedulePageTest -->
+      </class> <!-- newSetUp.newUp.EnvironmentPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
