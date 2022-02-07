@@ -7,11 +7,11 @@
 </listeners>
 
   <test thread-count="2" name="Test">
-    <classes>
-      <class name="newSetUp.newUp.AssetPageTest"/>
+    <classes>     
       <class name="newSetUp.newUp.ProjectPageTest"/>
       <class name="newSetUp.newUp.LoginPageTest"/>
       <class name="newSetUp.newUp.SchedulePageTest"/>
+	<class name="newSetUp.newUp.EnvironmentPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
