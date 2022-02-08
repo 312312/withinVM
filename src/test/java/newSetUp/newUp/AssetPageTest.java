@@ -82,6 +82,12 @@ public class AssetPageTest extends BaseClass {
 
 	
 	
+	@AfterTest
 	
+	public void  closeSession()
+	{
+		
+		driver.close();
+	}
 	
 }

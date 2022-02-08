@@ -23,24 +23,6 @@ public class LoginPageTest extends BaseClass {
 		super();
 	}
 	
-	ExtentReports extent;
-	
-	@BeforeTest
-	public void reportSetUp()
-	{
-		
-		String path= System.getProperty("user.dir")+"\\Extentreport\\index.html";
-
-		ExtentSparkReporter report=new ExtentSparkReporter(path);
-		report.config().setReportName("Web Testing");
-		report.config().setDocumentTitle("Automation");
-		
-		extent=new ExtentReports();
-		extent.attachReporter(report);
-		extent.setSystemInfo("Rohit","Saini");
-			
-	}
-	
 	
 	@BeforeMethod
 	public void setUp()
@@ -56,7 +38,6 @@ public class LoginPageTest extends BaseClass {
 	@Test(priority=1)
 	public void pageTitle()
 	{
-		extent.createTest("page Title").assignCategory("Regression").assignAuthor("Rohit");
 		String title= loginPage.validatePageTitle();
 		System.out.println(title);
 //		Assert.assertEquals(title,"Sign In1232Skytap");
@@ -68,9 +49,7 @@ public class LoginPageTest extends BaseClass {
 	@Test(priority=2)
 	public void loginApplication() throws AWTException
 	{	
-		extent.createTest("Login Application").assignCategory("Regression").assignAuthor("Rohit");
-
-		
+				
 		homePage=loginPage.login(prop.getProperty("userName"), prop.getProperty("password"));
 		
 		
@@ -81,7 +60,7 @@ public class LoginPageTest extends BaseClass {
 	@AfterTest
 	public void afterMethod()
 	{
-		extent.flush();
+		driver.close();
 		
 	}
 

@@ -100,7 +100,7 @@ public class ProjectPageTest extends BaseClass {
 	@AfterTest()
 	public void lastTest()
 	{
-	
+		driver.close();
 	}
 	
 	

@@ -141,8 +141,7 @@ public class EnvironmentPageTest extends BaseClass {
 	@AfterTest
 	public void afterMethod()
 	{
-		
-		
+		driver.close();
 	}
 
 }
