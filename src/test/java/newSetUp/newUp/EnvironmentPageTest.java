@@ -4,8 +4,14 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Iterator;
 
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -15,6 +21,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import BaseClass.BaseClass;
@@ -30,32 +37,20 @@ public class EnvironmentPageTest extends BaseClass {
 		super();
 	}
 	
-	ExtentReports extent;
-	
 	@BeforeTest
 	public void reportSetUp()
 	{
-		
-		String path= System.getProperty("user.dir")+"\\Extentreport\\index.html";
-
-		ExtentSparkReporter report=new ExtentSparkReporter(path);
-		report.config().setReportName("Web Testing");
-		report.config().setDocumentTitle("kytap Automation");
 		
 		initialization();
 		loginPage= new loginPage();
 		homePage=loginPage.login(prop.getProperty("userName"), prop.getProperty("password"));
 		environmentPage= new EnvironmentPage();	
-		extent=new ExtentReports();
-		extent.attachReporter(report);
-		extent.setSystemInfo("Environment","Saini");
 			
 	}
 	
 	@Test(priority=1)
 	public void pageTitle()
-	{
-		extent.createTest("page Title").assignCategory("Regression").assignAuthor("Rohit");
+	{		
 		String title= loginPage.validatePageTitle();
 		System.out.println(title);		
 	}
@@ -64,7 +59,7 @@ public class EnvironmentPageTest extends BaseClass {
 	@Test(priority=3)
 	public void environmentPage() throws AWTException
 	{	
-		extent.createTest("Environment page").assignCategory("Regression").assignAuthor("Rohit");
+
 		try {
 			environmentPage.environmentTab();
 			
@@ -78,7 +73,6 @@ public class EnvironmentPageTest extends BaseClass {
 	@Test(priority=4)
 	public void createEnvironment() 
 	{	
-		extent.createTest("Create Environemnt").assignCategory("Regression").assignAuthor("Rohit");
 		environmentPage.createNewEnvironment();
 		System.out.println(driver.getCurrentUrl());
 	
@@ -87,7 +81,6 @@ public class EnvironmentPageTest extends BaseClass {
 	@Test(priority=5)
 	public void runEnvironment()
 	{	
-		extent.createTest("Run Environemnt").assignCategory("Regression").assignAuthor("Rohit");
 		environmentPage.runEnvironemnt();
 		
 	}
@@ -95,7 +88,6 @@ public class EnvironmentPageTest extends BaseClass {
 	@Test(priority=6)
 	public void suspendEnvironment() throws InterruptedException
 	{	
-		extent.createTest("Suspend Environemnt").assignCategory("Regression").assignAuthor("Rohit");
 		Thread.sleep(1000);
 		try {
 			environmentPage.suspendEnvironemnt();
@@ -108,17 +100,48 @@ public class EnvironmentPageTest extends BaseClass {
 	@Test(priority=7)
 	public void shutdownEnvironment() throws InterruptedException 
 	{	
-		extent.createTest("Shutdown Environemnt").assignCategory("Regression").assignAuthor("Rohit");
 		environmentPage.shutDownEnvironemnt();
 		
 	}
 	
+
+//	@Test(priority=8)
+	public void data() throws IOException
+	{
+		
+		FileInputStream fis=new FileInputStream("C:\\Users\\rohit.saini\\Desktop\\TestData.xls");
+		HSSFWorkbook workbook=new HSSFWorkbook(fis);
+		HSSFSheet sheet=workbook.getSheetAt(0);
+		
+		
+		Iterator<Row> rowIterator = sheet.iterator();
+	    while (rowIterator.hasNext()) {
+	        Row row = rowIterator.next();
+
+	        Iterator<Cell> cellIterator = row.cellIterator();
+	        while (cellIterator.hasNext()) {
+	            Cell cell = cellIterator.next();
+	            switch (cell.getCellType()) {
+	                case NUMERIC:
+	                    System.out.println(cell.getNumericCellValue());
+	                    break;
+	                case STRING:
+	                    System.out.println(cell.getStringCellValue());
+	                    break;
+	            }
+	        }
+	        System.out.println("");
+	    }
+
+
 	
+	
+	}
 	
 	@AfterTest
 	public void afterMethod()
 	{
-		extent.flush();
+		
 		
 	}
 

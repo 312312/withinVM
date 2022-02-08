@@ -51,7 +51,6 @@ public class AssetPageTest extends BaseClass {
 
 	@Test(priority=1)
 	public void navigateToUploadassetPage() throws AWTException, InterruptedException {
-		extent.createTest("navigateToUploadassetPage").assignCategory("Regression").assignAuthor("Rohit");
 		assetPage.assetPage();
 		assetPage.uploadFile();
 		AssetPage.windowHandle(tabNum);
@@ -82,28 +81,6 @@ public class AssetPageTest extends BaseClass {
 	}
 
 	
-	
-	@BeforeTest()
-	public void knowBefore()
-	{
-		String path= System.getProperty("user.dir")+"\\report\\index.html";
-
-		ExtentSparkReporter report=new ExtentSparkReporter(path);
-		report.config().setReportName("Web Testing");
-		report.config().setDocumentTitle("New  Document");
-		
-		extent=new ExtentReports();
-		extent.attachReporter(report);
-		extent.setSystemInfo("Rohit","Saini");
-	
-	}
-	
-	
-	@AfterTest()
-	public void lastTest()
-	{
-		extent.flush();
-	}
 	
 	
 	

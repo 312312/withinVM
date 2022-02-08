@@ -7,7 +7,13 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+
 import BaseClass.BaseClass;
+import BaseClass.ExtentManager;
 
 public class Listeners extends BaseClass implements ITestListener{
 	
@@ -16,19 +22,24 @@ public class Listeners extends BaseClass implements ITestListener{
 	public void onTestStart(ITestResult result) {
 		
 		System.out.println("Method Name is "+ result.getName());
-		System.out.println("Started Test");		
+				
 	}
 
 	
 	public void onTestSuccess(ITestResult result) {			
 		System.out.println("Success Test");
+		System.out.println("Method Name is "+ result.getName());
+		ExtentTest test=ExtentManager.extent.createTest(result.getMethod().getMethodName()).log(Status.PASS, MarkupHelper.createLabel(null, ExtentColor.GREEN));
+		
+		
 	}
 
 	
 	public void onTestFailure(ITestResult result) {
 		
 		System.out.println("Method Name is "+ result.getName());
-		
+		String methodname=result.getMethod().getMethodName();
+		ExtentManager.extent.createTest(methodname);
 		String methodName=result.getMethod().getMethodName();
 		
 		
@@ -42,6 +53,7 @@ public class Listeners extends BaseClass implements ITestListener{
 			e.printStackTrace();
 		}
 		
+		ExtentTest test=ExtentManager.extent.createTest(result.getMethod().getMethodName()).log(Status.FAIL, MarkupHelper.createLabel(null, ExtentColor.RED));
 			
 	}
 
@@ -61,13 +73,13 @@ public class Listeners extends BaseClass implements ITestListener{
 
 	@Override
 	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
+		ExtentManager.extent=ExtentManager.createReport();
 		
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
+		ExtentManager.extent.flush();
 		
 	}
 

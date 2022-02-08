@@ -7,21 +7,15 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="newSetUp.newUp.ProjectPageTest">
+      <class name="newSetUp.newUp.EnvironmentPageTest">
         <methods>
-          <include name="addGroupToProject"/>
-          <include name="removeFromProject"/>
-          <include name="setUp"/>
-          <include name="lastTest"/>
+          <include name="afterMethod"/>
+          <include name="suspendEnvironment"/>
+          <include name="shutdownEnvironment"/>
+          <include name="runEnvironment"/>
+          <include name="reportSetUp"/>
         </methods>
-      </class> <!-- newSetUp.newUp.ProjectPageTest -->
-      <class name="newSetUp.newUp.SchedulePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="lastTest"/>
-          <include name="createSchedule"/>
-        </methods>
-      </class> <!-- newSetUp.newUp.SchedulePageTest -->
+      </class> <!-- newSetUp.newUp.EnvironmentPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

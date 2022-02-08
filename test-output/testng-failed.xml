@@ -8,8 +8,6 @@
           <include name="navigateToUploadassetPage"/>
           <include name="setUp"/>
           <include name="moreOptionDropDown"/>
-          <include name="knowBefore"/>
-          <include name="lastTest"/>
         </methods>
       </class> <!-- newSetUp.newUp.AssetPageTest -->
     </classes>
