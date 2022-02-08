@@ -56,7 +56,7 @@ public class SchedulePageTest extends BaseClass {
 	@AfterTest()
 	public void lastTest()
 	{
-	
+		driver.close();
 	}
 	
 	

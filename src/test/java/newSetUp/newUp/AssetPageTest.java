@@ -74,7 +74,6 @@ public class AssetPageTest extends BaseClass {
 	{
 	
 		extent.createTest("moreOptionDropDown").assignCategory("Regression").assignAuthor("Rohit");
-	
 		assetPage.assetPage();
 		AssetPage.moreOptionDD();
 		
