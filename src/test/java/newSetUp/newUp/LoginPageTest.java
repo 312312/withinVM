@@ -31,7 +31,7 @@ public class LoginPageTest extends BaseClass {
 		System.out.println("Login page started");
 		loginPage= new loginPage();
 			
-	}
+	}                      
 	
 	
 	
