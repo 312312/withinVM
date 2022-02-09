@@ -6,9 +6,13 @@
 		<listener class-name="utilities.RetryListener" />
 	</listeners>
 
-	<test thread-count="1" name="Test">
+	<test thread-count="0" name="Test">
 		<classes>
+			<class name="newSetUp.newUp.LoginPageTest" />
 			<class name="newSetUp.newUp.EnvironmentPageTest" />
+			<class name="newSetUp.newUp.AssetPageTest" />
+			<class name="newSetUp.newUp.ProjectPageTest" />
+			<class name="newSetUp.newUp.SchedulePageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
