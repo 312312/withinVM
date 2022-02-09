@@ -60,7 +60,7 @@ public class LoginPageTest extends BaseClass {
 	@AfterTest
 	public void afterMethod()
 	{
-		driver.close();
+		driver.quit();
 		
 	}
 
