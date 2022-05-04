@@ -15,6 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -49,6 +50,7 @@ public class ProjectPageTest extends BaseClass {
 	public void createProject() throws AWTException, InterruptedException {
 			
 		projectPage.projectClick();
+		
 		
 		
 	}
@@ -97,10 +99,10 @@ public class ProjectPageTest extends BaseClass {
 	
 	
 
-	@AfterTest()
+	@AfterClass()
 	public void lastTest()
 	{
-		driver.close();
+		super.closeInstance();
 	}
 	
 	

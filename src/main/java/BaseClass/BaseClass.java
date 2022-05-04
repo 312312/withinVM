@@ -65,6 +65,7 @@ public class BaseClass {
 			driver = new ChromeDriver();
 		}
 
+	
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -86,4 +87,9 @@ public class BaseClass {
 		
 	}
 
+	public void closeInstance() {
+		
+	//	driver.close();
+		
+	}
 }

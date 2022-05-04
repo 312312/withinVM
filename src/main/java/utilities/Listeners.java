@@ -27,8 +27,7 @@ public class Listeners extends BaseClass implements ITestListener{
 
 	
 	public void onTestSuccess(ITestResult result) {			
-		System.out.println("Success Test");
-		System.out.println("Method Name is "+ result.getName());
+		System.out.println("-- "+ result.getName());
 		ExtentTest test=ExtentManager.extent.createTest(result.getMethod().getMethodName()).log(Status.PASS, MarkupHelper.createLabel(null, ExtentColor.GREEN));
 		
 		
@@ -37,7 +36,7 @@ public class Listeners extends BaseClass implements ITestListener{
 	
 	public void onTestFailure(ITestResult result) {
 		
-		System.out.println("Method Name is "+ result.getName());
+		System.out.println("Failure Test Case"+ result.getName());
 		String methodname=result.getMethod().getMethodName();
 		ExtentManager.extent.createTest(methodname);
 		String methodName=result.getMethod().getMethodName();
@@ -60,15 +59,16 @@ public class Listeners extends BaseClass implements ITestListener{
 	@Override
 	public void onTestSkipped(ITestResult result) {
 		
-		System.out.println("Method Name is "+ result.getName());
-		System.out.println("Skipped Test");
+		System.out.println("--Skipped "+ result.getName());
+		ExtentTest test=ExtentManager.extent.createTest(result.getMethod().getMethodName()).log(Status.SKIP, MarkupHelper.createLabel(null, ExtentColor.YELLOW));
+		
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
 		
-		System.out.println("Method Name is "+ result.getName());
-		System.out.println("Success Percentage Test");
+		System.out.println("-- "+ result.getName());
+		ExtentTest test=ExtentManager.extent.createTest(result.getMethod().getMethodName()).log(Status.INFO, MarkupHelper.createLabel(null, ExtentColor.BLUE));
 	}
 
 	@Override

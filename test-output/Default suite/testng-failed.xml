@@ -5,11 +5,42 @@
     <classes>
       <class name="newSetUp.newUp.AssetPageTest">
         <methods>
-          <include name="navigateToUploadassetPage"/>
           <include name="setUp"/>
           <include name="moreOptionDropDown"/>
+          <include name="lastTest"/>
         </methods>
       </class> <!-- newSetUp.newUp.AssetPageTest -->
+      <class name="newSetUp.newUp.EnvironmentPageTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="shutdownEnvironment"/>
+          <include name="createEnvironment"/>
+          <include name="reportSetUp"/>
+          <include name="pageTitle"/>
+        </methods>
+      </class> <!-- newSetUp.newUp.EnvironmentPageTest -->
+      <class name="newSetUp.newUp.zoom">
+        <methods>
+          <include name="url"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- newSetUp.newUp.zoom -->
+      <class name="newSetUp.newUp.GroupTest">
+        <methods>
+          <include name="createGroup"/>
+          <include name="addResurces"/>
+          <include name="setUp"/>
+          <include name="lastTest"/>
+          <include name="removeResources"/>
+        </methods>
+      </class> <!-- newSetUp.newUp.GroupTest -->
+      <class name="newSetUp.newUp.SchedulePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="lastTest"/>
+          <include name="createSchedule"/>
+        </methods>
+      </class> <!-- newSetUp.newUp.SchedulePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

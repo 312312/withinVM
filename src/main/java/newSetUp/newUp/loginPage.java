@@ -22,9 +22,6 @@ public class loginPage extends BaseClass{
 		PageFactory.initElements(driver, this);
 	}
 	
-
-//Actions
-	
 	public String validatePageTitle()
 	{
 		return driver.getTitle();
@@ -38,14 +35,6 @@ public class loginPage extends BaseClass{
 		
 		return new HomePage();
 		
-	}
-	
-
-	
-	
-	
-	
-	
-	
+	}	
 	
 }

@@ -42,9 +42,6 @@ public class AssetPage extends BaseClass {
 	
 	@FindBy(xpath = "//a[@class='add manage-projects']")
 	static WebElement moreOptionProject;
-
-	@FindBy(xpath = "//table/tbody/tr[1]/td/div/label")
-	static WebElement moreOptionSelectProject;
 	
 	@FindBy(xpath = "//input[@type='submit']")
 	static WebElement submit;
@@ -140,25 +137,12 @@ public class AssetPage extends BaseClass {
 	public static void moreOptionDD() throws InterruptedException
 	{
 		moreOption.click();
-		moreOptionDownload.click();
-		moreOptionProject.click();
 		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(projectTitle));
-		
-		
-		moreOptionSelectProject.click();
-		submit.click();
-		
-		wait.until(ExpectedConditions.visibilityOfElementLocated(removeMessage));
-		
-		actions.moveToElement(deleteMessage).click().perform();
-		
-		Thread.sleep(6000);
-		moreOption.click();
 		rename.click();		
 		updateProjectName.sendKeys("Taste the best");
 		submit.click();
 	
+		wait.until(ExpectedConditions.visibilityOf(deleteMessage));
 		actions.moveToElement(deleteMessage).click().perform();
 		
 		actions.moveToElement(moreOption).click().perform();
@@ -167,6 +151,10 @@ public class AssetPage extends BaseClass {
 		selectRadioButton.click();
 		submitButton.click();
 		
+		wait.until(ExpectedConditions.visibilityOf(deleteMessage));
+		actions.moveToElement(deleteMessage).click().perform();
+		actions.moveToElement(moreOption).click().perform();
+	//	moreOptionDownload.click();
 		
 	}
 }

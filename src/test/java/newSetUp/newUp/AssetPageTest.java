@@ -15,6 +15,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -61,32 +62,23 @@ public class AssetPageTest extends BaseClass {
 	public void downloadAsset()
 
 	{
-		extent.createTest("downloadAsset").assignCategory("Regression").assignAuthor("Rohit");
 		assetPage.assetPage();
 		AssetPage.downloadFile();
-		
-
 	}
 
 	@Test(priority = 3)
 	public void moreOptionDropDown() throws InterruptedException
 
 	{
-	
-		extent.createTest("moreOptionDropDown").assignCategory("Regression").assignAuthor("Rohit");
 		assetPage.assetPage();
-		AssetPage.moreOptionDD();
-		
+		AssetPage.moreOptionDD();	
 	}
 
 	
-	
-	@AfterTest
-	
-	public void  closeSession()
+	@AfterClass()
+	public void lastTest()
 	{
-		
-		driver.close();
+		super.closeInstance();
 	}
 	
 }

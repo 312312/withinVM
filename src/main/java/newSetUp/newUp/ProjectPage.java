@@ -118,7 +118,7 @@ public class ProjectPage extends BaseClass {
 	static By removeMessage = By.cssSelector("div a.hide-msg");
 	static By firstresource = By.xpath("(//div/a[@data-test='resource-list-item__resource-name'])[1]");
 	static By addedText = By.xpath("//div[@class='add-undo__undo']/div[contains(text(),'Added')]");
-	static By deleteSuccessMessage = By.xpath("//div[starts-with(@class,'msg block')]");
+	static By deleteSuccessMessage = By.xpath("//a[@class='message__hide-msg']");
 	
 	
 	
@@ -143,6 +143,7 @@ public class ProjectPage extends BaseClass {
 		wait.until(ExpectedConditions.visibilityOf(createdProjectName));
 		String projectDefinedName = createdProjectName.getAttribute("textContent");
 		Assert.assertEquals(projectDefinedName, projectFullName);
+		
 
 	}
 
